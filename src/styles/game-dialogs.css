@@ -1,0 +1,125 @@
+/* The XMB stays quiet; each opened entry becomes a small RPG menu. */
+.detail-dialog.game-dialog {
+  --game-accent: #a9d9c4;
+  --accent: var(--game-accent);
+  --line: color-mix(in srgb, var(--game-accent) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--game-accent) 45%, transparent);
+  border-radius: 2px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--game-accent) 9%, #07101c), 0 30px 110px #0009, inset 0 0 0 3px #02081640;
+}
+.detail-dialog.game-projects { --game-accent: #9ebfff; }
+.detail-dialog.game-experience { --game-accent: #e8c78e; }
+.detail-dialog.game-skills { --game-accent: #c9b0f6; }
+.detail-dialog.game-resume { --game-accent: #f0c182; }
+.detail-dialog.game-contact { --game-accent: #edb3c3; }
+.detail-dialog.game-help { --game-accent: #a8c5e9; }
+.game-dialog::before { left: 20px; right: 20px; height: 2px; background: linear-gradient(90deg, var(--accent) 0 24px, transparent 24px calc(100% - 24px), var(--accent) calc(100% - 24px)); opacity: .8; }
+.game-dialog .dialog-topline { margin-bottom: 24px; padding-bottom: 16px; }
+.game-dialog .eyebrow, .game-dialog .player-label, .game-kicker, .inventory-caption, .dialog-index { font-family: var(--font-game); font-weight: 400; font-size: 13px; letter-spacing: .7px; text-transform: uppercase; }
+.game-dialog .eyebrow { font-size: 16px; letter-spacing: 1.3px; }
+.dialog-window-controls { display: flex; align-items: center; gap: 17px; }
+.dialog-index { font-size: 12px; color: #9aabc2; white-space: nowrap; }
+.game-dialog .close-button { border-radius: 2px; border-color: var(--line); }
+.game-dialog .close-button:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent); }
+.game-dialog .dialog-title { font-family: var(--font-game); font-size: 34px; font-weight: 500; letter-spacing: 0; line-height: 1.2; text-wrap: balance; }
+.game-dialog .player-introduction .dialog-title { font-size: 39px; }
+.game-kicker { margin-bottom: 10px; font-size: 11px; line-height: 1.5; color: var(--accent); }
+.game-heading { display: flex; align-items: center; gap: 20px; }
+.game-heading > div { min-width: 0; }
+.game-heading > .organization-logo { width: 76px; height: 76px; }
+.game-dialog .dialog-description { line-height: 1.85; }
+.collaborator-credit { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-top: 14px; font-size: 11px; line-height: 1.8; color: #9baac0; }
+.collaborator-credit a { display: inline-flex; align-items: center; gap: 6px; color: #c2d0e3; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
+.collaborator-credit a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.game-dialog .player-label { margin-bottom: 8px; }
+.game-dialog .player-portrait figcaption { font-family: var(--font-game); font-size: 11px; letter-spacing: .6px; }
+.game-dialog .player-indicator { border-radius: 0; width: 5px; height: 5px; }
+.game-dialog .tags { gap: 7px; }
+.game-dialog .tags > span { display: inline-flex; align-items: center; gap: 7px; padding: 4px 7px; border: 1px solid var(--line); border-radius: 1px; color: #c0ccde; background: color-mix(in srgb, var(--accent) 3%, transparent); font-size: 9px; line-height: 1.6; }
+.game-dialog .tags > span:not(:last-child)::after { content: none; }
+.game-dialog .tags > span::before { content: ''; width: 3px; height: 3px; background: var(--accent); opacity: .8; flex: 0 0 3px; }
+.inventory-caption { margin-top: 25px; display: flex; justify-content: space-between; gap: 12px; color: var(--accent); font-size: 12px; }
+.inventory-caption span { color: #9baac0; }
+.game-skills .tags { margin-top: 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.game-skills .tags > span { padding: 11px 12px; font: 16px/1.5 var(--font-game); }
+.game-skills .tags > span::before { width: 6px; height: 6px; flex-basis: 6px; margin-right: 3px; }
+.game-dialog .tags > span.has-technology-icon::before { content: none; }
+.technology-icon { display: inline-flex; align-items: center; justify-content: center; position: relative; width: 15px; height: 15px; flex: 0 0 15px; overflow: hidden; }
+.technology-icon img, .technology-icon svg { display: block; width: 100%; height: 100%; object-fit: contain; }
+.technology-label { min-width: 0; }
+.technology-mono img { filter: brightness(0) invert(1); opacity: .9; }
+.technology-light { background: #eef3f6; border-radius: 2px; padding: 2px; }
+.technology-xgboost { background: #fff; border-radius: 2px; padding: 1px; }
+.technology-catboost img { position: absolute; width: 450%; max-width: none; height: auto; left: -45%; top: -45%; }
+.game-skills .tags > span.has-technology-icon { gap: 12px; }
+.game-skills .technology-icon { width: 28px; height: 28px; flex-basis: 28px; }
+
+.rpg-stats { margin: 26px 0 0; display: grid; grid-template-columns: repeat(var(--stat-count), minmax(0, 1fr)); gap: 10px; }
+.stat-card { padding: 14px 14px 13px; background: color-mix(in srgb, var(--accent) 4%, transparent); border: 1px solid var(--line); min-width: 0; }
+.stat-card dt { font: 11px/1.4 var(--font-game); letter-spacing: .5px; color: #a7b7ca; }
+.stat-card dd { font: 500 24px/1.3 var(--font-game); color: var(--accent); margin: 8px 0 0; overflow-wrap: anywhere; }
+.stat-meter { margin-top: 12px; height: 6px; background: #02071380; mask-image: repeating-linear-gradient(90deg, #000 0 7px, transparent 7px 10px); }
+.stat-meter > span { display: block; height: 100%; background: var(--accent); }
+.game-section-heading { display: flex; align-items: center; gap: 10px; min-height: 28px; margin-bottom: 10px; }
+.game-dialog .game-section-heading h3 { font-family: var(--font-game); font-size: 16px; font-weight: 500; line-height: 1.35; margin-bottom: 0; color: #dfe8f6; }
+.quest-step { color: var(--accent); font: 13px/1 var(--font-game); padding: 5px 0; border-bottom: 1px solid var(--line); flex: 0 0 20px; }
+.game-dialog .detail-sections li::marker { color: var(--accent); }
+.game-dialog .dialog-actions { padding-top: 18px; }
+.game-dialog .dialog-actions .quiet-link, .game-dialog .dialog-actions .action-link { padding: 8px 10px; border: 1px solid var(--line); border-radius: 1px; }
+.game-dialog .dialog-actions .quiet-link:hover, .game-dialog .dialog-actions .action-link:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+
+/* Supplied marks keep their original colors; CSS frames trim empty margins. */
+.organization-logo { width: 40px; height: 40px; flex: 0 0 auto; display: grid; place-items: center; position: relative; overflow: hidden; background: #fff; border: 1px solid #ffffff20; border-radius: 2px; }
+.organization-logo img { position: absolute; width: 100%; height: 100%; max-width: none; object-fit: contain; }
+.organization-kfs { background: #000; }
+.organization-kfs img { width: 140%; height: 140%; }
+.organization-wordsmith img { width: 90%; height: 90%; }
+.organization-nic { background: #2584bd; }
+.organization-nic img { width: 132%; height: 132%; object-fit: cover; }
+.organization-factlens { background: #161616; }
+.organization-factlens img { width: 160%; height: 160%; }
+.entry-icon .organization-logo { width: 28px; height: 28px; opacity: .7; border: 0; transition: width .4s, height .4s, opacity .35s; }
+.entry.is-selected .entry-icon .organization-logo { width: 42px; height: 42px; opacity: 1; }
+.section-logos { display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto; }
+.section-logos .organization-logo { width: 30px; height: 30px; }
+
+@media (max-width: 640px) {
+  .game-dialog .dialog-title { font-size: 28px; }
+  .game-dialog .player-introduction .dialog-title { font-size: 30px; }
+  .game-dialog .eyebrow { font-size: 14px; }
+  .dialog-window-controls { gap: 10px; }
+  .dialog-index { font-size: 11px; }
+  .game-heading { gap: 15px; align-items: flex-start; }
+  .game-heading > .organization-logo { width: 59px; height: 59px; }
+  .game-kicker { font-size: 10px; }
+  .game-dialog .player-label { margin: 8px 0 -12px; font-size: 11px; }
+  .game-dialog .player-portrait figcaption { font-size: 9px; }
+  .rpg-stats { gap: 7px; margin-top: 22px; }
+  .stat-card { padding: 11px 9px; }
+  .stat-card dt { font-size: 9px; letter-spacing: .2px; }
+  .stat-card dd { font-size: 18px; }
+  .stat-meter { height: 5px; margin-top: 9px; }
+  .game-dialog .game-section-heading h3 { font-size: 15px; }
+  .game-dialog .dialog-actions { gap: 10px; }
+  .game-dialog .dialog-actions .quiet-link, .game-dialog .dialog-actions .action-link { padding: 8px 7px; font-size: 10px; }
+  .game-dialog .dialog-actions kbd { display: none; }
+  .game-skills .tags > span { font-size: 14px; padding: 9px; }
+  .game-skills .tags > span.has-technology-icon { gap: 8px; }
+  .game-skills .technology-icon { width: 24px; height: 24px; flex-basis: 24px; }
+  .entry.is-selected .entry-icon .organization-logo { width: 35px; height: 35px; }
+}
+@media (max-width: 360px) {
+  .game-skills .tags { grid-template-columns: 1fr; }
+  .game-dialog .player-introduction .dialog-title { font-size: 26px; }
+  .game-dialog .dialog-title { font-size: 25px; }
+  .stat-card { padding: 10px 7px; }
+  .stat-card dd { font-size: 15px; }
+  .stat-card dt { font-size: 8px; }
+  .game-heading > .organization-logo { width: 48px; height: 48px; }
+  .game-dialog .player-portrait figcaption { font-size: 8px; }
+}
+@media (max-width: 420px) {
+  .rpg-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rpg-stats .stat-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .stat-card dd { font-size: 20px; overflow-wrap: normal; }
+}

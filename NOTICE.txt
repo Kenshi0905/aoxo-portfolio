@@ -1,0 +1,65 @@
+AOXO PORTFOLIO — LICENSE SCOPE AND ASSET CREDITS
+
+The root MIT license applies to this project's original application source
+code and documentation. It does not grant a license to Ashmit Avash's résumé,
+portrait, personal branding, or the third-party fonts, recordings, logos, and
+trademarks described below. Those materials remain subject to their respective
+owners' rights and any separately supplied licenses. No endorsement by the
+organizations identified in the portfolio is implied.
+
+PERSONAL CONTENT
+The résumé, portrait, and aoxo. branding are supplied by Ashmit Avash for this
+personal portfolio and are excluded from the code's MIT license.
+
+TYPOGRAPHY
+SCE-PS3 Rodin LATIN2 Light, Regular, and Bold were supplied by the project
+owner. The original font files are retained unchanged in public/fonts.
+Embedded notice: Copyright (c)2008 Fontworks Inc. All Rights Reserved.
+No additional font redistribution license is granted by this repository.
+
+Pixelify Sans is distributed under the SIL Open Font License 1.1.
+Source: https://github.com/google/fonts/tree/main/ofl/pixelifysans
+License: public/fonts/PixelifySans-OFL.txt
+
+SOUND
+The original PlayStation 3 XMB WAV recordings were supplied by the project
+owner and retain their original filenames and data in public/audio/ps3.
+These recordings belong to their respective rights holders; the root MIT
+license does not apply to them. The application is an independent homage to
+the PlayStation 3 XrossMediaBar. PlayStation is a trademark of Sony Interactive
+Entertainment.
+
+ORGANIZATION AND PROJECT MARKS
+NIC, KIIT Wordsmith Society, KIIT Film Society, and FactLens logos were
+supplied by the project owner. These identify the organizations and project
+discussed in the portfolio and remain their owners' marks.
+
+The OpenAI logo is the unmodified avatar from the official OpenAI GitHub
+organization, used to identify the owner's OpenAI Student Collective role.
+Source: https://github.com/openai
+The mark belongs to OpenAI.
+
+TECHNOLOGY ICONS
+Devicon: language, web, Docker, Linux, Git, MySQL, and related technology icons.
+Source: https://github.com/devicons/devicon
+License: public/images/technologies/Devicon-LICENSE.txt (MIT)
+
+Simple Icons: Tailscale mark.
+Source: https://github.com/simple-icons/simple-icons
+License: public/images/technologies/SimpleIcons-LICENSE.txt (CC0)
+
+XGBoost: logo from the official project website, linked by its README.
+Source: https://xgboost.ai/images/logo/xgboost-logo-trimmed.png
+Project: https://github.com/dmlc/xgboost
+
+CatBoost: logo asset linked by the official project README.
+Source: https://github.com/catboost/catboost
+
+Technology marks remain the trademarks of their respective owners. Original
+image files are retained; the CatBoost symbol is framed with CSS.
+
+APPLICATION DEPENDENCIES
+React and React DOM: https://github.com/facebook/react (MIT)
+Radix Dialog: https://github.com/radix-ui/primitives (MIT)
+Lucide React: https://github.com/lucide-icons/lucide (ISC)
+Dependency license notices are distributed with the corresponding packages.

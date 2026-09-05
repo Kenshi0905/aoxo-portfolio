@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.jpeg binary
+*.jpg binary
+*.pdf binary
+*.ttf binary
+*.wav binary
+public/fonts/PixelifySans-OFL.txt -text -whitespace

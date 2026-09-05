@@ -1,0 +1,31 @@
+node_modules/
+dist/
+.npm-cache/
+tmp/
+release/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+
+# Local notes and tooling
+/HOSTING.md
+/ATTRIBUTIONS.md
+/AGENTS.md
+/.agents/
+/.codex/
+/.vscode/
+/.idea/
+/guidelines/
+/public/audio/ps3/README.md
+
+# Unused design-export starter files
+/src/app/components/ui/
+/src/app/components/figma/
+/src/imports/
+/src/styles/globals.css
+/default_shadcn_theme.css
+/pnpm-workspace.yaml
+/postcss.config.mjs
