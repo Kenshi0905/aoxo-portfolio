@@ -1,6 +1,6 @@
 # aoxo.
 
-Ashmit Avash's developer portfolio, inspired by the PlayStation 3 XrossMediaBar.
+My developer portfolio, inspired by the PlayStation 3 XrossMediaBar.
 
 A quiet, full-screen interface for exploring my projects, experience, and interests. Move across categories, browse their entries, and open a game-inspired panel for the details.
 
