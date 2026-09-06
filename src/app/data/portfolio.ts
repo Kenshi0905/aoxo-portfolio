@@ -2,7 +2,7 @@ import { UserRound, GraduationCap, Feather, Compass, FolderCode, Server, ScanSea
 
 import type { OrganizationId } from './organizations';
 
-export const RESUME_URL = '/Ashmit-Avash-Resume.pdf?v=2026-09-06';
+export const RESUME_URL = '/Ashmit-Avash-Resume.pdf?v=672392aaf5c2';
 export const GITHUB_URL = 'https://github.com/Kenshi0905';
 export const EMAIL = 'ashmitavash@gmail.com';
 
@@ -34,7 +34,7 @@ export const categories: PortfolioCategory[] = [
         id: 'profile', label: 'Who I am', subtitle: 'A little about the person behind the screen', icon: UserRound,
         eyebrow: 'PLAYER PROFILE', title: 'Curiosity, built into things.',
         profile: { name: 'Ashmit Avash', role: 'Electronics & Computer Science · KIIT', photo: '/images/ashmit-profile.jpeg' },
-        description: 'I’m Ashmit, an Electronics and Computer Science student at KIIT. I turn a curiosity for how things work into software, AI experiments, and systems I can call my own.',
+        description: 'I’m Ashmit, a third-year Electronics and Computer Science student at KIIT. I turn a curiosity for how things work into software, AI experiments, and systems I can call my own.',
         tags: ['AI & machine learning', 'Software development', 'Self-hosted systems'],
         facts: [{ value: 'KIIT', label: 'UNIVERSITY' }, { value: '8.03 / 10', label: 'CGPA', score: 8.03, max: 10 }, { value: 'Bhubaneswar', label: 'HOME BASE' }],
         sections: [
@@ -46,10 +46,10 @@ export const categories: PortfolioCategory[] = [
       {
         id: 'education', label: 'Education', subtitle: 'Electronics meets computer science', icon: GraduationCap,
         eyebrow: 'LEARNING LOG', title: 'Two disciplines. One curious mind.',
-        description: 'Pursuing a B.Tech in Electronics and Computer Science at KIIT University, Bhubaneswar, with interests across AI, programming, and infrastructure.',
-        tags: ['B.Tech · 2024–present', 'Electronics & Computer Science'],
+        description: 'In my third year of B.Tech in Electronics and Computer Science at KIIT University, Bhubaneswar, with interests across AI, programming, and infrastructure.',
+        tags: ['B.Tech · 2024–present', 'Third year · 2026–2027', 'Electronics & Computer Science'],
         facts: [{ value: '8.03 / 10', label: 'CGPA', score: 8.03, max: 10 }, { value: '92.2%', label: 'CLASS X', score: 92.2, max: 100 }, { value: '81.6%', label: 'CLASS XII', score: 81.6, max: 100 }],
-        sections: [{ title: 'KIIT University · 2024–present', text: 'B.Tech in Electronics and Computer Science. Building practical experience through software, machine learning, and hardware projects.' }, { title: 'DAV Public School, CDA · 2010–2024', text: 'Completed AISSE and AISSCE, with 92.2% in Class X and 81.6% in Class XII.' }],
+        sections: [{ title: 'KIIT University · 2024–present', text: 'Third year of B.Tech in Electronics and Computer Science for the 2026–2027 academic session. Building practical experience through software, machine learning, and hardware projects.' }, { title: 'DAV Public School, CDA · 2010–2024', text: 'Completed AISSE and AISSCE, with 92.2% in Class X and 81.6% in Class XII.' }],
       },
       {
         id: 'beyond-code', label: 'Beyond the code', subtitle: 'Words, films, and a love for games', icon: Feather,
@@ -223,7 +223,7 @@ export const categories: PortfolioCategory[] = [
         eyebrow: 'RÉSUMÉ / LATEST EDITION', title: 'A little more on paper.',
         description: 'My education, experience, technical skills, projects, and activities in one place. The updated résumé includes my OpenAI Campus Lead role and Vice President role at KIIT Wordsmith Society.',
         tags: ['PDF', '1 page', 'Updated résumé'],
-        sections: [{ title: 'At a glance', text: 'B.Tech in Electronics and Computer Science at KIIT, a summer internship at NIC, and projects in AI and self-hosted infrastructure. Campus leadership through the OpenAI Student Collective and KIIT Wordsmith Society.' }],
+        sections: [{ title: 'At a glance', text: 'Third-year B.Tech student in Electronics and Computer Science at KIIT for the 2026–2027 session, with a summer internship at NIC and projects in AI and self-hosted infrastructure. Campus leadership through the OpenAI Student Collective and KIIT Wordsmith Society.' }],
         action: { label: 'Download PDF', href: RESUME_URL, download: true },
       },
       {
